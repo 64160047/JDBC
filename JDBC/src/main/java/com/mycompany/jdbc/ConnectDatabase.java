@@ -13,7 +13,7 @@ import java.util.logging.Logger;
  *
  * @author minnie
  */
-public class JDBC {
+public class ConnectDatabase {
 
     public static void main(String[] args) {
         Connection conn = null;
