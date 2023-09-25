@@ -4,6 +4,7 @@
  */
 package com.mycompany.jdbc.dao;
 
+import com.mycompany.jdbc.helper.DatabaseHelper;
 import com.mycompany.jdbc.model.User;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
