@@ -3,19 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.jdbc.model;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-
 
 /**
  *
  * @author minnie
  */
 public class User {
-    private int id;
+     private int id;
     private String name;
     private String password;
     private int role;
@@ -43,15 +42,15 @@ public class User {
     public int getId() {
         return id;
     }
-    
-     public void setId(int id) {
+
+    public void setId(int id) {
         this.id = id;
     }
 
     public String getName() {
         return name;
     }
-
+    
     public void setName(String name) {
         this.name = name;
     }
@@ -79,12 +78,12 @@ public class User {
     public void setGender(String gender) {
         this.gender = gender;
     }
-    
-     @Override
+
+    @Override
     public String toString() {
         return "User{" + "id: " + id + ", name: " + name + ", password: " + password + ", role: " + role + ", gender: " + gender + '}';
     }
-
+    
     public static User fromRS(ResultSet rs) {
         User user = new User();
         try {
@@ -104,6 +103,5 @@ public class User {
 
 
     
-    
-    
+
 }
